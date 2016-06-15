@@ -15,6 +15,8 @@ namespace StringSafari
         /// <param name="str">The string to search</param>
         /// <returns>true if the string has "zebra" in it, false otherwise</returns>
         public static bool HasBabyZebra(string str)
+        
+      
         {
             // TODO
             return str.Contains("zebra");
@@ -42,7 +44,7 @@ namespace StringSafari
         public static bool HasZebra(string str)
         {
             // TODO
-            return str.ToLower()== "zebra";
+            return str.ToLower() == "zebra";
         }
 
         /// <summary>
@@ -54,7 +56,7 @@ namespace StringSafari
         public static bool HasADazzle(string str)
         {
             // TODO
-            return str.ToLower =="Has;
+            return str.Contains("lion");
         }
 
         /// <summary>
@@ -67,7 +69,8 @@ namespace StringSafari
         public static bool HasAPride(string str)
         {
             // TODO
-            return false;
+            return str.Contains("LION");
+               
         }
 
         /// <summary>
