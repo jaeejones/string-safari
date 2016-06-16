@@ -16,12 +16,20 @@ namespace StringSafari
         /// <returns>true if the string has "zebra" in it, false otherwise</returns>
         public static bool HasBabyZebra(string str)
         
-      
-        {
-            // TODO
-            return str.Contains("zebra");
+         {
+            
+            if (str.Contains("zebra"))
+            {
+                return true;
+            }
+        
+            else
+            {
+                return false;
+            } 
         }
 
+        // return str.Contains("zebra"); this one line passes the test for true 
         /// <summary>
         /// Looks for an adult zebra in <paramref name="str"/>.
         /// <para>An adult zebra is "ZEBRA", all uppercase.</para>
@@ -56,7 +64,18 @@ namespace StringSafari
         public static bool HasADazzle(string str)
         {
             // TODO
-            return str.Contains("lion");
+            int fisrtZebra = str.IndexOf("zebra");
+            int lastZebra = str.LastIndexOf("zebra");
+            int numberOfZebras = lastZebra - fisrtZebra;
+            if (numberOfZebras >= 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         /// <summary>
@@ -82,7 +101,7 @@ namespace StringSafari
         public static bool ThereWillBeBlood(string str)
         {
             // TODO
-            return ;
+            return str. ;
         }
 
         /// <summary>
